@@ -1,4 +1,3 @@
-// Executar as funções que estão no start depois que a página for lida podem ser utilizada outras funções que estão doando conflito quando a página ainda não foi carregada.
 
 window.addEventListener('load', start);
 

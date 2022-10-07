@@ -12,14 +12,34 @@ function onScroll() {
   showBackToTopButtonOnScroll();
 }
 
+
 function showNavOnScroll() {
   let scroll = document.getElementById('navigation')
-  scroll.classList.add('scroll');
-  if(scrollY === 0) {
+  if(scrollY > 0) {
+    scroll.classList.add('scroll');
+    
+    // let logoAlt = document.createElement('img');
+    
+    
+    // logoAlt.innerHTML = `
+    // <img src="/assets/lu-otoch-arq-LOGO-HORIZONTAL-WHITE.png" alt="Logomarca Escritório de Arquitetura Luciana Otoch" >`
+
+    // console.log(logoAlt);
+  
+    
+    // document.querySelector('.logo').appendChild("logoAlt")
+  
+  } else {
+
     scroll.classList.remove('scroll');
+    
   }
+
+
+  
 }
 
+// Arrow up
 function showBackToTopButtonOnScroll() {
   let topButton = document.getElementById('backToTopButton');
   // console.log(scrollY)

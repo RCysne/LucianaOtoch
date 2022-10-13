@@ -219,7 +219,7 @@ nav .wrapper .logo img {
 }
 
 nav.scroll {
-  background: var(--primary-color);
+  background: white;
 
 }
 
@@ -591,7 +591,7 @@ footer .social-links {
     }
 
   section {
-    padding-block: 16rem;
+    padding-block: 8rem;
   } 
 
   section header h2 {
@@ -616,7 +616,7 @@ footer .social-links {
     font-size: initial;
     font-weight: initial;
     color: initial;
-    background-color: initial;
+    background-color: white;
     filter: initial;
   }
   /* END RESET */
@@ -673,19 +673,19 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu ul li a {
-    color: var(--brand-light-2);
+    color: var(--primary-color);
     opacity: 0.6;
   }
 
   nav#navigation.scroll .menu a.button {
-    border-color: white;
-    color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
   }
 
   nav#navigation.scroll .menu a.button:hover {
     background-color: var(--primary-color);
     filter: brightness(1.2);
-    color: white;
+    color: var(--primary-color);
   }
 
   nav#navigation .menu li a {
@@ -718,7 +718,7 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu a::after {
-    background-color: white;
+    background-color: var(--primary-color);
   }
 
   nav#navigation.scroll .menu li a:hover {
@@ -745,7 +745,7 @@ footer .social-links {
 }
 
 #home h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 4rem 0;
 }
 
@@ -772,7 +772,7 @@ footer .social-links {
 }
 
 #home img {
-  width: 42rem;
+  width: 22rem;
 }
 
 #home .stats .stat + .stat { /* Pegar o elemento indicado que tem o elemento também indicado anterior.*/
@@ -781,6 +781,10 @@ footer .social-links {
 
 #home .stats .stat {
   flex: 1;
+}
+
+#home .stat h3 {
+  font-size: 2.5rem;
 }
 
 
@@ -844,18 +848,25 @@ footer .social-links {
   /* ========= CONTACT ========*/
 
   #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
+    grid-template-columns: 1fr 55rem;
     grid-template-areas: 'A B';
   }
 
   #contact h2 {
     width: 40.4rem;
+    font-size: 2.5rem;
+  }
+
+  #contact ul li {
+    margin-top: 0;
+    margin-bottom: .5rem;
   }
 
   /* ========= CONTACT ========*/
 
   footer {
-    padding-block: 4rem;
+    padding-block: .8rem;
+    height: auto;
   }
 
   footer .wrapper{
@@ -866,16 +877,23 @@ footer .social-links {
   
   footer .col-a {
     align-self: left;
+    /* margin-top: 3rem; */
   }
 
-  footer .col-b ul {
-    /* align-self: center; */
-    justify-content: center;
-    
+  .col-b {
+    display: flex;
+    justify-content: left;
+
   }
 
+  footer .col-b p {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
 
   footer p {
+  color: #fff;
   margin-bottom: 0;
   }
 
